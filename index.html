@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipso Fresh - Limitless</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        /* Brand Colors */
+        :root {
+            --midday-sky-blue: #0095D9;
+            --olive: #6B7534;
+            --meadow-mist-green: #7AB252;
+            --soft-fuchsia: #E31D79;
+            --peach: #F7A086;
+            --citrus-fresh: #FFD649;
+            --charcoal: #1A1A1A;
+            --stone: #F7F7F7;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tenor Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--charcoal);
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'DM Serif Display', serif;
+            margin-bottom: 1rem;
+        }
+
+        .all-caps {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.5rem;
+            color: var(--midday-sky-blue);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--charcoal);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--midday-sky-blue);
+        }
+
+        .hero {
+            background-color: var(--midday-sky-blue);
+            color: white;
+            padding: 12rem 2rem 8rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .product-showcase {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: var(--stone);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .related-videos {
+            padding: 4rem 2rem;
+            background-color: var(--stone);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="container">
+            <div class="logo">SIPSO FRESH</div>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#videos">Videos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Limitless</h1>
+        <p class="all-caps">Reusable Products Making A Difference</p>
+    </section>
+
+    <section class="product-showcase" id="products">
+        <div class="container">
+            <h2 class="text-center">Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1581235720704-63b82b7ecfc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Classic Bottle</h3>
+                        <p>Perfect for everyday adventures</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1512356116355-3f754e0c634a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Sport Bottle</h3>
+                        <p>Designed for active lifestyles</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1572635148818-ef6fd45eb394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80');"></div>
+                    <div class="product-info">
+                        <h3>Adventure Series</h3>
+                        <p>Built for the great outdoors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-videos" id="videos">
+        <div class="container">
+            <h2 class="text-center">Related Videos</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    <p>Reusable Water Bottles Impact</p>
+                </div>
+                <div class="video-card">
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/3fumBcKC6RE" frameborder="0" allowfullscreen></iframe>
+                    <p>Sustainability and Innovation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
